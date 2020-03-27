@@ -132,4 +132,9 @@
       <Name>KGNA</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\KGNA_LOGO.png" />
+    <BundleResource Include="Resources\bg.png" />
+    <BundleResource Include="Resources\KGNA.png" />
+  </ItemGroup>
 </Project>

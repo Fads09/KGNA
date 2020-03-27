@@ -1,7 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="KGNA.MainPage">
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    x:Class="KGNA.MainPage">
+    <StackLayout Padding="0,20" BackgroundColor="#3e454d">
+            <Image Source="KGNA_LOGO.png"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   HeightRequest="180"/>
+            <AbsoluteLayout>
+                  <Image Source="bg.png"
+                         AbsoluteLayout.LayoutBounds="0.4, 0.6, -1, 1" 
+                         AbsoluteLayout.LayoutFlags="PositionProportional"          
+                         HeightRequest="330"
+                         WidthRequest="200"/>
+                  <Image Source="KGNA.png"
+                         AbsoluteLayout.LayoutBounds="0.45, 0.4, -1, -1" 
+                         AbsoluteLayout.LayoutFlags="PositionProportional"  
+                         HeightRequest="252"
+                         WidthRequest="290"/>
+            </AbsoluteLayout>     
+            <StackLayout Padding="10,10">
+                <Label Text="Welcome to KGNA"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   TextColor="White"
+                   Font="Bold,22"/>
+
+                <Label Text="Welcome to the KGNA app built with the help of volunteers living in North America!"
+                   HorizontalTextAlignment="Center"
+                   FontSize="20"
+                   TextColor="White"/>
+            </StackLayout>
+        </StackLayout>
 </ContentPage>
